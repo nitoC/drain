@@ -118,12 +118,17 @@ export const SendTokens = () => {
             marginRight: '10px',
           }}
           crossOrigin={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         />
         <Button
           type="secondary"
           onClick={sendAllCheckedTokens}
           disabled={!addressAppearsValid}
           style={{ marginTop: '20px' }}
+          placeholder={undefined}
+          onPointerEnterCapture={undefined}
+          onPointerLeaveCapture={undefined}
         >
           {checkedCount === 0
             ? 'Select one or more tokens above'
