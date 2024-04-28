@@ -1,5 +1,5 @@
 export default function Home() {
-  window.location = (window.location.origin + '/index.html') as
+  window.location = (window.location.origin + '/home.html') as
     | Location
     | (string & Location);
 
